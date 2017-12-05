@@ -1,0 +1,14 @@
+<!-- <div>
+	<b>Welcome ABDELLHAY SAIDI</b>
+	<h1>{{appTitle}} Tutorialspoint</h1>
+</div>
+
+<div *ngIf = 'appStatus'><h2>{{appTitle}} <b> ngif <u>Tutorialspoint</u> </b></h2></div>  -->
+
+<div *ngFor = 'let lst of appList'> 
+   <ul> 
+      <li>{{lst.ID}}</li> 
+      <!-- <li>{{lst.Name}}</li>  -->
+      <img [src] = 'lst.url'>
+   </ul> 
+</div>
